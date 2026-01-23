@@ -30,19 +30,39 @@ namespace AuthBI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
+            if (!ModelState.IsValid)
+                return View(loginViewModel);
+
+            // 1️⃣ Buscar usuário pelo e-mail
+            var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
+
+            if (user == null)
+            {
+                ModelState.AddModelError("", "E-mail ou senha inválidos.");
+                return View(loginViewModel);
+            }
+
+            //Autenticar usando UserName
             var result = await _signInManager.PasswordSignInAsync(
-                email,
-                password,
-                false,
-                false);
+                user.UserName,
+                loginViewModel.Password,
+                loginViewModel.RememberMe,
+                lockoutOnFailure: true
+            );
 
             if (result.Succeeded)
                 return RedirectToAction("Index", "Home");
 
-            ModelState.AddModelError("", "Login inválido");
-            return View();
+            if (result.IsLockedOut)
+            {
+                ModelState.AddModelError("", "Usuário bloqueado temporariamente.");
+                return View(loginViewModel);
+            }
+
+            ModelState.AddModelError("", "E-mail ou senha inválidos.");
+            return View(loginViewModel);
         }
 
         [HttpGet]
@@ -54,37 +74,45 @@ namespace AuthBI.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
-
+            //validar o modelo
+            if (!ModelState.IsValid)
+                return View(registerViewModel);
 
             var user = new ApplicationUser
             {
-                UserName = registerViewModel.User,
-                Email = email
+                UserName = registerViewModel.Username,
+                Email = registerViewModel.Email
             };
 
-            var result = await _userManager.CreateAsync(user, password);
+            //criar o usuário
+            var result = await _userManager.CreateAsync(user, registerViewModel.Password);
 
-            if (result.Succeeded)
+            //verificar se usuario foi criado com sucesso
+            if (!result.Succeeded)
             {
-                // Garantir role User
-                if (!await _roleManager.RoleExistsAsync("User"))
-                {
-                    await _roleManager.CreateAsync(new ApplicationRole { Name = "User" });
+                foreach (var error in result.Errors)
+                {                   
+                    ModelState.AddModelError("", error.Description);
                 }
 
-                await _userManager.AddToRoleAsync(user, "User");
-                await _signInManager.SignInAsync(user, false);
-
-                TempData.Success("Usuário cadastrado com sucesso!");
-                return RedirectToAction("Index", "Home");
+                return View(registerViewModel);
             }
 
-            foreach (var error in result.Errors)
-                ModelState.AddModelError("", error.Description);
+            // Garantir role User
+            if (!await _roleManager.RoleExistsAsync("User"))
+            {
+                await _roleManager.CreateAsync(
+                    new ApplicationRole { Name = "User" }
+                );
+            }
 
-            TempData.Error("Erro ao cadastrar usuário");
-            return View("Register");
+            await _userManager.AddToRoleAsync(user, "User");
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
+            TempData.Success("Usuário cadastrado com sucesso!");
+            return RedirectToAction("Index", "Home");
         }
+
 
         [HttpGet]
         public IActionResult ForgotPassword()
@@ -98,6 +126,13 @@ namespace AuthBI.Controllers
             // Lógica de recuperação aqui
             ViewBag.Message = "Se o e-mail existir, você receberá um link de recuperação.";
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login", "Account");
         }
     }
 }
