@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var mongoSettings = builder.Configuration.GetSection("MongoDbSettings");
 
+builder.Configuration.AddEnvironmentVariables();
+
 //Configure Identity to use MongoDB
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
     .AddErrorDescriber<PtBrIdentityErrorDescriber>()
