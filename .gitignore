@@ -1,0 +1,22 @@
+# Configurações do Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Binários e pastas de build
+/bin/
+/obj/
+
+# Docker
+docker-compose.override.yml
+
+# DataProtection keys
+/DataProtection-Keys/
+
+# Variáveis de ambiente
+*.env
+AuthBI/.env
+
+# Logs
+*.log
