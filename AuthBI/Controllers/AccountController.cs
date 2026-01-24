@@ -47,7 +47,8 @@ namespace AuthBI.Controllers
 
             //Autenticar usando UserName
             var result = await _signInManager.PasswordSignInAsync(
-                user.UserName,
+                //user.UserName,
+                loginViewModel.Email,
                 loginViewModel.Password,
                 loginViewModel.RememberMe,
                 lockoutOnFailure: true
