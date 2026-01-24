@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthBI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3a15f5d0ed329952f8025bfde53a125dc6681de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7684bcb2f1144bbe24a18fa8e68840c990461a07")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthBI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthBI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -24,14 +24,18 @@ namespace AuthBI.Controllers
 
 
         [HttpGet]
-        public IActionResult Login(string returnUrl = null)
+        public IActionResult Login(string? returnUrl=null)
         {
-            ViewData["ReturnUrl"] = returnUrl; // guarda a url de retorno
-            return View();
+            var model = new LoginViewModel
+            {
+                ReturnUrl = returnUrl
+            };
+
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginViewModel, string returnUrl)
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             if (!ModelState.IsValid)
                 return View(loginViewModel);
@@ -47,8 +51,7 @@ namespace AuthBI.Controllers
 
             //Autenticar usando UserName
             var result = await _signInManager.PasswordSignInAsync(
-                //user.UserName,
-                loginViewModel.Email,
+                user.UserName,
                 loginViewModel.Password,
                 loginViewModel.RememberMe,
                 lockoutOnFailure: true
@@ -57,10 +60,10 @@ namespace AuthBI.Controllers
             if (result.Succeeded)
             {
                 // Redireciona para a página original ou para Home
-                if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                if (!string.IsNullOrEmpty(loginViewModel.ReturnUrl) && Url.IsLocalUrl(loginViewModel.ReturnUrl))
                 {
-                    return Redirect(returnUrl);
-                }
+                    return Redirect(loginViewModel.ReturnUrl);
+                }                 
                 else
                 {
                     return RedirectToAction("Index", "Home");
