@@ -24,13 +24,14 @@ namespace AuthBI.Controllers
 
 
         [HttpGet]
-        public IActionResult Login()
+        public IActionResult Login(string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl; // guarda a url de retorno
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginViewModel)
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel, string returnUrl)
         {
             if (!ModelState.IsValid)
                 return View(loginViewModel);
@@ -53,7 +54,18 @@ namespace AuthBI.Controllers
             );
 
             if (result.Succeeded)
-                return RedirectToAction("Index", "Home");
+            {
+                // Redireciona para a página original ou para Home
+                if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+                
 
             if (result.IsLockedOut)
             {
