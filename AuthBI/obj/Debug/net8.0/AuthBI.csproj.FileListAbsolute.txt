@@ -35,7 +35,6 @@ C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\AuthBI.csproj.Up2Date
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\AuthBI.dll
 C:\Projetos Samuel\AuthBI\AuthBI\obj\Debug\net8.0\refint\AuthBI.dll

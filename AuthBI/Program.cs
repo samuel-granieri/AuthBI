@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddEnvironmentVariables();
+
 var mongoSettings = builder.Configuration.GetSection("MongoDbSettings");
 
-builder.Configuration.AddEnvironmentVariables();
+
 
 //Configure Identity to use MongoDB
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
