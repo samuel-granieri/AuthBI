@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Projetos Samuel\\AuthBI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Program.cs",
-              "RelativeDocumentMoniker": "AuthBI\\Program.cs",
-              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Program.cs",
-              "RelativeToolTip": "AuthBI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T04:14:15.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\.env",
-              "RelativeDocumentMoniker": "AuthBI\\.env",
-              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\.env",
-              "RelativeToolTip": "AuthBI\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-24T04:11:46.058Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AuthBI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AuthBI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T05:08:38.093Z",
               "EditorCaption": ""
             }
           ]
