@@ -10,7 +10,7 @@ var mongoSettings = builder.Configuration.GetSection("MongoDbSettings");
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
     .AddErrorDescriber<PtBrIdentityErrorDescriber>()
     .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>(
-        mongoSettings["ConnectionStrings"],
+        mongoSettings["ConnectionString"],
         mongoSettings["DatabaseName"])
     .AddDefaultTokenProviders();
 
