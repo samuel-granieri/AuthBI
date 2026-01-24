@@ -1,0 +1,16 @@
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AuthBI.exe
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AuthBI.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AuthBI.deps.json
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AuthBI.runtimeconfig.json
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AuthBI.pdb
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\AspNetCore.Identity.MongoDbCore.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\BCrypt.Net-Next.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\DnsClient.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\MongoDB.Bson.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\MongoDB.Driver.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\MongoDbGenericRepository.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\SharpCompress.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\Snappier.dll
+C:\Projetos Samuel\AuthBI\AuthBI\obj\Release\net8.0\PubTmp\Out\ZstdSharp.dll
