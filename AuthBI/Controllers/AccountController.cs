@@ -40,7 +40,7 @@ namespace AuthBI.Controllers
             if (!ModelState.IsValid)
                 return View(loginViewModel);
 
-            // 1️⃣ Buscar usuário pelo e-mail
+            // Buscar usuário pelo e-mail
             var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
 
             if (user == null)
@@ -93,6 +93,22 @@ namespace AuthBI.Controllers
             //validar o modelo
             if (!ModelState.IsValid)
                 return View(registerViewModel);
+
+            // Verificar se já existe usuário com o mesmo e-mail
+            var existingEmailUser = await _userManager.FindByEmailAsync(registerViewModel.Email);
+            if (existingEmailUser != null)
+            {
+                ModelState.AddModelError("Email", "Este e-mail já está cadastrado.");
+                return View(registerViewModel);
+            }
+
+            // Verificar se já existe usuário com o mesmo username
+            var existingUserName = await _userManager.FindByNameAsync(registerViewModel.Username);
+            if (existingUserName != null)
+            {
+                ModelState.AddModelError("Username", "Este nome de usuário já está em uso.");
+                return View(registerViewModel);
+            }
 
             var user = new ApplicationUser
             {

@@ -5,8 +5,8 @@
 *.sln.docstates
 
 # Binários e pastas de build
-/bin/
-/obj/
+AuthBI/bin/
+AuthBI/obj/
 
 # Docker
 docker-compose.override.yml
