@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Projetos Samuel\\AuthBI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|c:\\projetos samuel\\authbi\\authbi\\views\\dashboard\\_tabelasql.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{758E71AC-6EE6-48E1-A0B6-2E94FC4AC6D4}|AuthBI\\AuthBI.csproj|solutionrelative:authbi\\views\\dashboard\\_tabelasql.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthBI\\Program.cs",
+              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Program.cs",
+              "RelativeToolTip": "AuthBI\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T20:07:20.578Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,36 +52,47 @@
               "RelativeDocumentMoniker": "AuthBI\\appsettings.json",
               "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\appsettings.json",
               "RelativeToolTip": "AuthBI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-24T15:04:03.916Z",
+              "WhenOpened": "2026-02-22T19:46:09.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\.env",
-              "RelativeDocumentMoniker": "AuthBI\\.env",
-              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\.env",
-              "RelativeToolTip": "AuthBI\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-24T15:03:50.963Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "AuthBI\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "AuthBI\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-22T19:38:31.318Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "AuthBI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "AuthBI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAgwGYAAAAdAAAAAAAAAA==",
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "AuthBI\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "AuthBI\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T15:02:32.002Z",
+              "WhenOpened": "2026-02-22T19:35:09.639Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_TabelaSql.cshtml",
+              "DocumentMoniker": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Dashboard\\_TabelaSql.cshtml",
+              "RelativeDocumentMoniker": "AuthBI\\Views\\Dashboard\\_TabelaSql.cshtml",
+              "ToolTip": "C:\\Projetos Samuel\\AuthBI\\AuthBI\\Views\\Dashboard\\_TabelaSql.cshtml",
+              "RelativeToolTip": "AuthBI\\Views\\Dashboard\\_TabelaSql.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-16T19:40:23.14Z"
             }
           ]
         }

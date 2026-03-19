@@ -1,16 +1,16 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Dashboard";
 }
-@{
-}
 
-<div class="container mt-4">
-    <h2>Dashboard</h2>
-
-    <iframe width="100%"
-            height="600"
-            src="https://app.fabric.microsoft.com/groups/me/reports/fa580280-dca7-4432-9a64-9ea1078d6f05/43225549c9711e9637c0?experience=fabric-developer"
-            frameborder="0"
-            allowFullScreen="true">
-    </iframe>
+<div id="consulta">
+    <partial name="_TabelaSql" model="Model" />
 </div>
+
+<button hx-post="/Dashboard/ConsultaBanco"
+        hx-target="#consulta"
+        hx-swap="innerHTML">
+    Consulta
+</button>
+
+

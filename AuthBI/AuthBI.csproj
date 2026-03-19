@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\Domain\DreCsv.cs" />
+    <Compile Remove="Models\ViewModels\DashboardFiltroViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Repositories\Implementations\" />
@@ -15,6 +20,8 @@
   <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.MongoDbCore" Version="7.0.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
     <PackageReference Include="MongoDB.Driver" Version="3.6.0" />
   </ItemGroup>
 
