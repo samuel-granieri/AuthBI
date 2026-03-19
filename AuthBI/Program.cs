@@ -7,9 +7,9 @@ using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
-using var connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
-await connection.OpenAsync();
-Console.WriteLine("Conectou!");
+//using var connection = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
+//await connection.OpenAsync();
+//Console.WriteLine("Conectou!");
 
 // --------------------------------------------------
 // Configuration
