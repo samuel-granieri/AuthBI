@@ -1,16 +1,17 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Dashboard";
 }
 
-<div id="consulta">
-    <partial name="_TabelaSql" model="Model" />
+<div>
+    <button hx-get="/relatorio/faturamento"
+            hx-target="#resultado"
+            hx-trigger="click"
+            hx-indicator="#loading">
+        Carregar Filiais
+    </button>
+    <span id="loading" class="htmx-indicator">Carregando...</span>
 </div>
 
-<button hx-post="/Dashboard/Faturamento"
-        hx-target="#consulta"
-        hx-swap="innerHTML">
-    Consulta Filiais
-</button>
+<div id="resultado"></div>
 
 
