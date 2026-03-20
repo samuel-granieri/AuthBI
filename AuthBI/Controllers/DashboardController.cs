@@ -14,6 +14,12 @@ namespace AuthBI.Controllers
         public DashboardController(QueryService query)
             => _query = query;
 
+        [HttpGet("dashboard")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpGet("relatorio/faturamento")]
         public async Task<IActionResult> Faturamento()
         {

@@ -1,19 +1,22 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<Dictionary<string, object?>>
 
 <table>
     <thead>
-        <tr><th>Data</th><th>Total</th></tr>
+        <tr>
+            @foreach (var col in Model.First().Keys)
+            {
+                <th>@col</th>
+            }
+        </tr>
     </thead>
     <tbody>
         @foreach (var row in Model)
         {
             <tr>
-                <td>@row["NomeFantasia"]</td>
-                <td>@row["CNPJ"]</td>
+                @foreach (var val in row.Values)
+                {
+                    <td>@val</td>
+                }
             </tr>
         }
     </tbody>
