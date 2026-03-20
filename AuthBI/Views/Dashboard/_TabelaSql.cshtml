@@ -4,5 +4,17 @@
 @{
 }
 
-@model int
-@Model
+<table>
+    <thead>
+        <tr><th>Data</th><th>Total</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model)
+        {
+            <tr>
+                <td>@row["NomeFantasia"]</td>
+                <td>@row["CNPJ"]</td>
+            </tr>
+        }
+    </tbody>
+</table>

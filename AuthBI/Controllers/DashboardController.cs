@@ -8,22 +8,22 @@ namespace AuthBI.Controllers
     [Authorize]
     public class DashboardController : Controller
     {
-    
-        private static int _consulta = 0;
 
-        [HttpGet]
-        public IActionResult Index()
+        private readonly QueryService _query;
+
+        public DashboardController(QueryService query)
+            => _query = query;
+
+        [HttpGet("relatorio/faturamento")]
+        public async Task<IActionResult> Faturamento()
         {
-            return View();
-        }
+            var sql = """
+            SELECT NomeFantasia, CNPJ
+            FROM Filial
+            """;
 
-        [HttpGet]
-        public IActionResult ConsultaBanco()
-        {
-
-
-            _consulta++;
-            return PartialView("_TabelaSql", _consulta);
+            var rows = await _query.ExecuteAsync("filial_01", sql);
+            return PartialView("_TabelaSql", rows);
         }
 
     }
