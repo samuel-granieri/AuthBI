@@ -8,7 +8,6 @@ namespace AuthBI.Controllers
 {
     [Route("ws")]
     [ApiController]
-    [Authorize]
     public class WebSocketController : ControllerBase
     {
         private readonly WorkerConnectionManager _manager;
